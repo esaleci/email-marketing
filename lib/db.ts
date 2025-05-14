@@ -15,7 +15,7 @@ export async function executeQuery(query: string, params: any[] = []) {
     console.log("With params:", params)
 
     // Use the query method instead of calling sql directly
-    const result = await sql.query(query, params)
+    const result = await sql(query, params)
     console.log("Query result:", result.length > 0 ? "Data returned" : "No data")
     return result
   } catch (error) {
