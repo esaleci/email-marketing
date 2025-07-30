@@ -40,10 +40,10 @@ export function UserNav({ user }: UserNavProps) {
         </DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>
-          <DropdownMenuItem asChild>
+          <DropdownMenuItem disabled asChild>
             <a href="/dashboard/profile">Profile</a>
           </DropdownMenuItem>
-          <DropdownMenuItem disabled asChild>
+          <DropdownMenuItem  asChild>
             <a href="/dashboard/settings">Settings</a>
           </DropdownMenuItem>
         </DropdownMenuGroup>
