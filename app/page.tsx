@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex min-h-screen flex-col max-w-screen overflow-x-hidden">
       <header className="sticky top-0 z-40 border-b bg-background">
         <div className="container flex h-16 items-center justify-between py-4">
           <div className="flex items-center gap-2 font-bold">
@@ -11,9 +11,7 @@ export default function Home() {
             <span>Marketing</span>
           </div>
           <nav className="flex items-center gap-4">
-            <Link href="/direct-dashboard">
-              <Button variant="ghost">Dashboard</Button>
-            </Link>
+           
             <Link href="/login">
               <Button variant="outline">Login</Button>
             </Link>
@@ -41,16 +39,19 @@ export default function Home() {
                       Get Started
                     </Button>
                   </Link>
-                  <Link href="/features">
+                  {/* <Link href="/features">
                     <Button size="lg" variant="outline" className="w-full">
                       Learn More
                     </Button>
-                  </Link>
-                  <Link href="/demo-login">
+                  </Link> */}
+                  <Link href="/direct-dashboard">
+              <Button size="lg" variant="secondary" className="w-full">Try Demo</Button>
+            </Link>
+                  {/* <Link href="/demo-login">
                     <Button size="lg" variant="secondary" className="w-full">
                       Try Demo
                     </Button>
-                  </Link>
+                  </Link> */}
                 </div>
               </div>
               <div className="flex items-center justify-center">

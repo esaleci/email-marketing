@@ -63,15 +63,15 @@ export function TemplateEditorWithPreview({ initialContent, onContentChange, rea
   return (
     <div className="space-y-4">
       <Tabs defaultValue="editor" value={activeTab} onValueChange={setActiveTab}>
-        <div className="flex justify-between items-center mb-2">
+        <div className="flex justify-between items-center mb-2 flex-wrap">
           <TabsList>
             <TabsTrigger value="editor" className="flex items-center gap-1">
               <CodeIcon className="h-4 w-4" />
-              HTML Editor
+              HTML
             </TabsTrigger>
             <TabsTrigger value="css" className="flex items-center gap-1">
               <CodeIcon className="h-4 w-4" />
-              CSS Editor
+              CSS
             </TabsTrigger>
             <TabsTrigger value="preview" className="flex items-center gap-1">
               <EyeIcon className="h-4 w-4" />
@@ -84,7 +84,7 @@ export function TemplateEditorWithPreview({ initialContent, onContentChange, rea
               size="sm"
               variant="outline"
               onClick={() => setActiveTab("editor")}
-              className="flex items-center gap-1"
+              className="flex items-center gap-1 mt-3 md:mt-0"
             >
               <RefreshCw className="h-4 w-4" />
               Edit

@@ -52,8 +52,8 @@ export default function PreviewTemplatePage({ params }: { params: { id: string }
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center justify-between">
-        <h2 className="text-3xl font-bold tracking-tight">Template Preview</h2>
+      <div className="flex items-center justify-between flex-wrap">
+        <h2 className="text-3xl font-bold tracking-tight py-3">Template Preview</h2>
         <div className="flex gap-2">
           <Button variant="outline" asChild>
             <a href={`/dashboard/templates/${templateId}`}>Edit</a>

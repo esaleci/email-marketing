@@ -171,8 +171,8 @@ export default function RecipientsPage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center justify-between">
-        <h2 className="text-3xl font-bold tracking-tight">Recipients</h2>
+      <div className="flex items-center justify-between flex-wrap">
+        <h2 className="text-3xl font-bold tracking-tight py-3">Recipients</h2>
         <div className="flex gap-2">
           <Button variant="outline" onClick={handleImportClick} className="flex items-center gap-2">
             <Upload size={16} />
@@ -195,7 +195,7 @@ export default function RecipientsPage() {
           </Button>
         </div>
       </div>
-
+     
       <Tabs defaultValue="list" value={activeTab} onValueChange={setActiveTab} className="space-y-4">
         <TabsList>
           <TabsTrigger value="list" className="flex items-center gap-2">
@@ -228,7 +228,7 @@ export default function RecipientsPage() {
                   </Button>
                 </div>
               ) : (
-                <div className="rounded-md border">
+                <div className="rounded-md border w-full overflow-auto border border-gray-200 rounded-lg shadow dark:border-gray-800">
                   <Table>
                     <TableHeader>
                       <TableRow>
@@ -363,6 +363,7 @@ export default function RecipientsPage() {
           </Card>
         </TabsContent>
       </Tabs>
+      
     </div>
   )
 }

@@ -76,8 +76,8 @@ export default function TemplatesPage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center justify-between">
-        <h2 className="text-3xl font-bold tracking-tight">Email Templates</h2>
+      <div className="flex items-center justify-between flex-wrap ">
+        <h2 className="text-3xl font-bold tracking-tight py-3">Email Templates</h2>
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <DialogTrigger asChild>
             <Button>Create Template</Button>

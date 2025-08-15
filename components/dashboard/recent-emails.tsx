@@ -87,7 +87,7 @@ export function RecentEmails() {
   }
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 w-full">
       {recentEmails.map((email) => (
         <div key={email.id} className="flex items-start">
           <Avatar className="h-9 w-9">

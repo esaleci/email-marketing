@@ -252,12 +252,15 @@ export default function ReportsPage() {
       </Card>
 
       <Tabs defaultValue="overview" value={reportType} onValueChange={setReportType} className="space-y-4">
-        <TabsList className="grid grid-cols-4">
+      <div className="relative rounded-sm overflow-x-scroll h-10 bg-muted">
+      {/* <!-- TabsList will go here --> */}
+      <TabsList className="grid  w-full grid-cols-2 lg:grid-cols-4 xl:w-2/3">
           <TabsTrigger value="overview">Overview</TabsTrigger>
           <TabsTrigger value="openRates">Open Rates</TabsTrigger>
           <TabsTrigger value="clickRates">Click Rates</TabsTrigger>
           <TabsTrigger value="deliveryStatus">Delivery Status</TabsTrigger>
         </TabsList>
+        </div>
 
         <TabsContent value="overview">
           <Card>

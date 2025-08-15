@@ -147,8 +147,8 @@ export default function CampaignsPage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center justify-between">
-        <h2 className="text-3xl font-bold tracking-tight">Email Campaigns</h2>
+      <div className="flex items-center justify-between flex-wrap">
+        <h2 className="text-3xl font-bold tracking-tight py-3">Email Campaigns</h2>
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <DialogTrigger asChild>
             <Button>Create Campaign</Button>
@@ -199,7 +199,7 @@ export default function CampaignsPage() {
                     </SelectContent>
                   </Select>
                 </div>
-                <div className="grid grid-cols-4 items-center gap-4">
+                <div className="grid grid-cols-4 items-center gap-4 max-w-full">
                   <Label htmlFor="scheduledDate" className="text-right">
                     Schedule Date
                   </Label>
@@ -231,7 +231,7 @@ export default function CampaignsPage() {
               <p>No campaigns found. Create a campaign to get started.</p>
             </div>
           ) : (
-            <div className="rounded-md border">
+            <div className="rounded-md border w-full overflow-auto border border-gray-200 rounded-lg shadow dark:border-gray-800">
               <Table>
                 <TableHeader>
                   <TableRow>

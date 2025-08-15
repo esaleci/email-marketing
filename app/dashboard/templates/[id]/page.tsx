@@ -94,8 +94,8 @@ export default function EditTemplatePage({ params }: { params: { id: string } })
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center justify-between">
-        <h2 className="text-3xl font-bold tracking-tight">Edit Template</h2>
+      <div className="flex items-center justify-between flex-wrap">
+        <h2 className="text-3xl font-bold tracking-tight py-3">Edit Template</h2>
         <div className="flex gap-2">
           <Button variant="outline" onClick={() => router.push("/dashboard/templates")}>
             Back to Templates

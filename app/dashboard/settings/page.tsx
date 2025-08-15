@@ -134,7 +134,7 @@ export default function SettingsPage() {
       </div>
 
       <Tabs defaultValue="appearance" className="space-y-4">
-        <TabsList className="grid grid-cols-3 md:grid-cols-5">
+        <TabsList className="grid grid-cols-5 md:grid-cols-5">
           <TabsTrigger value="appearance" className="flex items-center gap-2">
             <Palette size={16} />
             <span className="hidden md:inline">Appearance</span>

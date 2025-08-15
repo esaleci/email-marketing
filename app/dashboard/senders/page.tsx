@@ -103,8 +103,8 @@ export default function SendersPage() {
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="flex items-center justify-between">
-        <h2 className="text-3xl font-bold tracking-tight">Sender Accounts</h2>
+      <div className="flex items-center justify-between flex-wrap">
+        <h2 className="text-3xl font-bold tracking-tight py-3">Sender Accounts</h2>
         <Dialog open={isDialogOpen} onOpenChange={setIsDialogOpen}>
           <DialogTrigger asChild>
             <Button>Add Sender</Button>
@@ -196,7 +196,7 @@ export default function SendersPage() {
               <p>No sender accounts found. Add a sender account to get started.</p>
             </div>
           ) : (
-            <div className="rounded-md border">
+            <div className="rounded-md border w-full overflow-auto border border-gray-200 rounded-lg shadow dark:border-gray-800">
               <Table>
                 <TableHeader>
                   <TableRow>
